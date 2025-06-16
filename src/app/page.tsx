@@ -1,6 +1,9 @@
 import ScheduleButton from "./components/ScheduleButton";
+import ServicesWidget from "./components/ServicesWidget";
+import QuestionsAnswers from "./components/QuestionsAnswers";
 import Image from "next/image";
 import { iconSizes } from "../../constants";
+
 
 export default function Home() {
   return (
@@ -131,6 +134,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <ServicesWidget/>
+      <QuestionsAnswers/>
     </>
   );
 }
