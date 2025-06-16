@@ -1,26 +1,121 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-family: var(--font-montserrat);
+  --black: #000000;
+  --white: #FFFFFF;
+  --grey:#CCCCCC;
+  --darkGrey:#5A5A5A;
+  --lightPurple: #6C1FE8;
+  --darkPurple: #5806DC;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family), sans-serif;
+  background: var(--white);
+  color: var(--black);
 }
+
+
+/* NavBar Component */
+
+.navbar {
+  background-color: transparent;
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  z-index: 20;
+  top: 0; 
+  left: 0;  
+  
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    position: relative;
+  } 
+   
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin-top: 1.5rem; 
+  }
+  .nav-links {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  }
+  .nav-item, .logo {
+    line-height: 60px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin-top: 1.5rem; 
+  }
+  .nav-item:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 1.5s ease, background-color 0.5s ease;  
+  }
+  .nav-icon {
+    display: none;
+  }
+  .nav-color {
+    color: var(--white)
+  }
+
+  @media screen and (max-width: 1024px) {
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      color: var(--white);
+      position: absolute;
+      top: 0px;
+      left: -110%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      padding-top: 20px;
+      margin-top: 0;
+    }
+    .nav-menu.active {
+      background-color: var(--lightPurple);
+      left: 0px;
+      opacity: 1;
+      transition: all 0.3s ease;
+      z-index: 1;  
+    }
+    .nav-item .active {
+      border: none;
+    }
+    .nav-links {
+      padding: 1.5rem;
+      width: 100%;
+      display: table;
+    }
+    .nav-icon {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(-100%, -50%);
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+      z-index:50; 
+    } 
+  }

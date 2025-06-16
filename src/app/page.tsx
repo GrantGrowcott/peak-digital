@@ -1,103 +1,136 @@
+import ScheduleButton from "./components/ScheduleButton";
 import Image from "next/image";
+import { iconSizes } from "../../constants";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <div className="mt-40 flex flex-col items-center justify-center mx-auto w-[90%]">
+        <h1 className="text-center text-3xl md:text-4xl lg:text-6xl font-bold">
+          Turn Your Website Into a{" "}
+          <span className="mt-2 block text-[var(--darkPurple)] ">Sales-Generating Machine</span>
+        </h1>
+        <h2 className="text-sm lg:text-base text-center my-6 max-w-xl mx-auto">
+          {" "}
+          We specialize in crafting high-converting websites for growing businesses in Hamilton. From branding and
+          content creation to SEO, we help you attract customers and operate stress free.Click below for a free
+          consultation!!!
+        </h2>
+        <ScheduleButton />
+        <div className="my-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+          <Image
+            src="/hero-one.png"
+            width={iconSizes.heroWidth}
+            height={iconSizes.heroHeight}
+            alt="Board Meeting with Laptops and People"
+            className="mt-8"
+          />
+          <Image
+            src="/hero-two.png"
+            width={iconSizes.heroWidth}
+            height={iconSizes.heroHeight}
+            alt="Board Meeting with Laptops and People"
+            className="mb-8"
+          />
+          <Image
+            src="/hero-three.png"
+            width={iconSizes.heroWidth}
+            height={iconSizes.heroHeight}
+            alt="Board Meeting with Laptops and People"
+            className="mt-8"
+          />
+          <Image
+            src="/hero-four.png"
+            width={iconSizes.heroWidth}
+            height={iconSizes.heroHeight}
+            alt="Board Meeting with Laptops and People"
+            className="mb-8"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+      <div className="bg-[var(--darkPurple)] py-24 text-center">
+        <h3 className="text-center text-4xl font-bold text-[var(--white)]">Our One-stop Complete Services</h3>
+        <h4 className="text-[var(--grey)] my-12">Simplify operations with our efficient, quality focused services</h4>
+        <ul className="text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto w-[90%]">
+          <li className="flex flex-col items-start bg-[var(--lightPurple)] rounded-3xl p-6">
+            <Image src="/service-icon-one.png" height={75} width={75} alt="Connections icon" className="pb-6" />
+            <h3 className="text-[var(--white)] font-bold text-2xl">A.I and Search</h3>
+            <h4 className="text-[var(--grey)]">Content, SEO, and speed—optimized for search and AI.</h4>
+          </li>
+          <li className="flex flex-col items-start bg-[var(--lightPurple)] rounded-3xl p-6">
+            <Image src="/service-icon-two.png" height={75} width={75} alt="Connections icon" className="pb-6" />
+            <h3 className="text-[var(--white)] font-bold text-2xl">Lead Generation</h3>
+            <h4 className="text-[var(--grey)]">
+              Capture more leads with a clear message, smart layout, and strategic calls to action.
+            </h4>
+          </li>
+          <li className="flex flex-col items-start bg-[var(--lightPurple)] rounded-3xl p-6">
+            <Image src="/service-icon-three.png" height={75} width={75} alt="Connections icon" className="pb-6" />
+            <h3 className="text-[var(--white)] font-bold text-2xl">Website Design</h3>
+            <h4 className="text-[var(--grey)]">
+              Modern, custom website designs that reflect your brand identity through focused analysis.
+            </h4>
+          </li>
+          <li className="flex flex-col items-start bg-[var(--lightPurple)] rounded-3xl p-6">
+            <Image src="/service-icon-four.png" height={75} width={75} alt="Connections icon" className="pb-6" />
+            <h3 className="text-[var(--white)] font-bold text-2xl">Graphic Design</h3>
+            <h4 className="text-[var(--grey)]">
+              We design custom animations, logos, and graphics that reflect your brand’s unique style.
+            </h4>
+          </li>
+          <li className="flex flex-col items-start bg-[var(--lightPurple)] rounded-3xl p-6">
+            <Image src="/service-icon-five.png" height={75} width={75} alt="Connections icon" className="pb-6" />
+            <h3 className="text-[var(--white)] font-bold text-2xl">Hosting & Upkeep</h3>
+            <h4 className="text-[var(--grey)]">
+              Reliable hosting and ongoing website care—so you can focus on running your business.
+            </h4>
+          </li>
+          <li className="flex flex-col items-start bg-[var(--lightPurple)] rounded-3xl p-6">
+            <Image src="/service-icon-six.png" height={75} width={75} alt="Connections icon" className="pb-6" />
+            <h3 className="text-[var(--white)] font-bold text-2xl">App Development</h3>
+            <h4 className="text-[var(--grey)]">
+              Improve efficiency with custom tools that save time and reduce friction.
+            </h4>
+          </li>
+        </ul>
+      </div>
+      <div className="py-24 mx-auto w-[85%] ">
+        <h3 className="font-bold text-5xl mb-6">Our Values</h3>
+        <div className="flex flex-col lg:flex-row gap-12">
+          <div className="flex-1">
+            <h3 className="text-[var(--darkGrey)] font-bold ">
+              Our work is rooted in transparency, creativity, and a commitment to staying ahead in an ever-evolving
+              online world.
+            </h3>
+            <div className="flex justify-center mt-4">
+              <Image src="/values-smiling.png" height={493} width={385} alt="Woman Smiling while posing" />
+            </div>
+          </div>
+          <div className="flex-1 border-b-3 border-black pr-8">
+            <ul className="grid grid-cols-4 gap-y-2 mb-16">
+              <li className="text-3xl col-span-1 font-bold flex items-center justify-center">01</li>
+              <li className="col-span-3 text-3xl font-bold">Performance First</li>
+              <li className="col-span-3 col-start-2 text-base">
+                We build fast, functional, and scalable solutions that deliver strong user experiences.
+              </li>
+            </ul>
+             <ul className="grid grid-cols-4 gap-y-2 mb-16">
+              <li className="text-3xl col-span-1 font-bold flex items-center justify-center">02</li>
+              <li className="col-span-3 text-3xl font-bold">Results Driven</li>
+              <li className="col-span-3 col-start-2 text-base">
+                We use data to drive decisions that lead to the most optimal outcomes for your business.
+              </li>
+            </ul>
+             <ul className="grid grid-cols-4 gap-y-2 mb-16">
+              <li className="text-3xl col-span-1 font-bold flex items-center justify-center">03</li>
+              <li className="col-span-3 text-3xl font-bold">Integrity & Trust</li>
+              <li className="col-span-3 col-start-2 text-base">
+                We only recommend what works and treat your business like it’s our own.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
