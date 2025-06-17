@@ -17,7 +17,7 @@ export default function ContactUs() {
         </h2>
         <p className="mt-2 text-lg/8 text-gray-600">Ask us anything. </p>
       </div>
-      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form action="https://formspree.io/f/mwpbqlyw" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm/6 font-semibold text-gray-900">

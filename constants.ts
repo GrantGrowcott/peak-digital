@@ -3,6 +3,17 @@ export const iconSizes = {
     logoHeight: 97,
     heroWidth: 250,
     heroHeight: 350,
+    scheduleArrowWidth:26,
+    scheduleArrowHeight:16,
+    serviceIcon:75,
+    womanHeight: 493,
+    womanWidth: 385,
+    check:30,
+    grant:450,
+    aboutWidth:1050,
+    aboutHeight:700,
+    serviceWidth: 530,
+    serviceHeight:400,
 
 }
 

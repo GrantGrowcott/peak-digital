@@ -1,23 +1,19 @@
 @import "tailwindcss";
-
 :root {
   --font-family: var(--font-montserrat);
   --black: #000000;
   --white: #FFFFFF;
+  --lightGrey:#F3F4F6;
   --grey:#CCCCCC;
   --darkGrey:#5A5A5A;
   --lightPurple: #6C1FE8;
   --darkPurple: #5806DC;
 }
-
 body {
   font-family: var(--font-family), sans-serif;
   background: var(--white);
   color: var(--black);
 }
-
-
-/* NavBar Component */
 
 .navbar {
   background-color: transparent;

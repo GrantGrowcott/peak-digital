@@ -25,7 +25,7 @@ export default function QuestionsAnswers() {
           <div key={index} className="border border-gray-300 rounded-lg overflow-hidden">
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center px-6 py-4 bg-gray-100 hover:bg-gray-200 transition"
+              className="w-full flex justify-between items-center px-6 py-4 bg-[var(--lightGrey)] hover:bg-gray-200 transition cursor-pointer"
             >
               <span className="text-lg font-semibold text-left">{faq.question}</span>
               {openStates[index] ? (
@@ -35,7 +35,7 @@ export default function QuestionsAnswers() {
               )}
             </button>
             {openStates[index] && (
-              <div className="px-6 py-4 bg-white text-gray-700">
+              <div className="px-6 py-4 bg-[var(--white)] text-gray-700">
                 {faq.answer}
               </div>
             )}

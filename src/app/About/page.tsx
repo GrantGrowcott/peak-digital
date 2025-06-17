@@ -1,6 +1,7 @@
 import Image from "next/image";
 import GetStarted from "../components/GetStarted";
 import ContactLandscape from "../components/ContactLandscape";
+import { iconSizes } from "../../../constants";
 
 const About = () => {
   return (
@@ -13,7 +14,7 @@ const About = () => {
         </h2>
         <div className="flex flex-col lg:flex-row items-center justify-center my-24 gap-4">
           <div className="flex-1">
-            <Image src="/grant-profile.png" width={450} height={450} alt="Founder Grant Growcott" />
+            <Image src="/grant-profile.png" width={iconSizes.grant} height={iconSizes.grant} alt="Founder Grant Growcott" />
           </div>
           <div className="flex-1">
             <h3 className="text-3xl font-bold text-[var(--darkPurple)]">Peak Digital</h3>
@@ -32,10 +33,9 @@ const About = () => {
       <div className="mx-auto max-w-2xl">
         <h3 className="text-3xl font-bold">Why Choose Us</h3>
         <h4 className="my-6 text[var(--darkGrey)]">We combine technical expertise with personalized service to deliver custom websites that drive real results. From lead generation to sales optimization, we focus on what matters most—helping your business grow online.</h4>
-        <Image src="/computer-work.png" width={1050} height={700} alt="Person Taking Notes and Working at a Computer"/>
+        <Image src="/computer-work.png" width={iconSizes.aboutWidth} height={iconSizes.aboutHeight} alt="Person Taking Notes and Working at a Computer"/>
         <p className="my-6 text[var(--darkGrey)]"> At Peak Digital, we don’t just build websites—we craft tailored digital experiences designed to convert visitors into customers. Every business is unique, which is why we take the time to understand your goals, audience, and challenges. Whether you&apos;re looking to increase traffic, generate qualified leads, or boost online sales, our team blends strategic design, custom development, and SEO best practices to deliver measurable growth. We&apos;re committed to being more than just a service provider—we&apos;re your digital partner for long-term success.</p>
         <GetStarted/>
-        
       </div>
       <ContactLandscape/>
     </div>
