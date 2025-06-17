@@ -36,7 +36,7 @@ function NavBar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/Blog" className="bg- bg-transparent text-[var(--white)] lg:bg-[var(--darkPurple)] p-0 lg:p-3 lg:px-5 lg:rounded-2xl" onClick={handleClick}>
+            <Link href="/Contact-Us" className="bg- bg-transparent text-[var(--white)] lg:bg-[var(--darkPurple)] p-0 lg:p-3 lg:px-5 lg:rounded-2xl" onClick={handleClick}>
               Contact Us
             </Link>
           </li>
