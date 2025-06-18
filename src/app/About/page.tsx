@@ -6,7 +6,7 @@ import Head from "next/head";
 
 const About = () => {
   return (
-    <>
+    <> 
       <Head>
         <title>About Us | Peak Digital</title>
         <meta
