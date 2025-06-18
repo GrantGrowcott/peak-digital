@@ -3,10 +3,18 @@ import ServicesWidget from "./components/ServicesWidget";
 import QuestionsAnswers from "./components/QuestionsAnswers";
 import Image from "next/image";
 import { iconSizes } from "../../constants";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Peak Digital | Hamilton Web Design & SEO</title>
+        <meta
+          name="description"
+          content="Peak Digital builds high-converting websites for businesses in Hamilton. Web design, SEO, branding, and app development — all in one place."
+        />
+      </Head>
       <div className="min-h-screen flex flex-col items-center justify-center px-4 py-24 w-[90%] mx-auto">
         <h1 className="text-center text-3xl md:text-4xl lg:text-6xl font-bold">
           Turn Your Website Into a <span className="mt-2 block text-[var(--darkPurple)]">Sales-Generating Machine</span>

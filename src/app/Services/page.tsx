@@ -1,10 +1,18 @@
 import Image from "next/image";
 import ServicesWidget from "../components/ServicesWidget";
 import { iconSizes } from "../../../constants";
+import Head from "next/head";
 
 const Services = () => {
   return (
     <>
+    <Head>
+        <title>Services | Peak Digital</title>
+        <meta
+          name="description"
+          content="Learn how our paid advertising help, SEO Services, Rebranding,and Website development can help boost sales for your business. "
+        />
+      </Head>
     <div className="mt-40 mx-auto w-[90%]">
       <h1 className="font-bold text-4xl text-center">Services</h1>
       <h2 className="text-[var(--darkGrey)] text-center max-w-2xl mx-auto">
