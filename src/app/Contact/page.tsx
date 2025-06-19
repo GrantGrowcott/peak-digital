@@ -2,20 +2,18 @@
 import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
 import { Field, Label, Switch } from "@headlessui/react";
-import Head from "next/head";
+
+export const metadata = {
+  title: "Contact | Peak Digital",
+  description:
+    "Contact us anytime regarding how we can help you create the business of your dreams. No task is too difficult at Peak Digital.",
+};
 
 export default function ContactUs() {
   const [agreed, setAgreed] = useState(false);
 
   return (
     <>
-      <Head>
-        <title>Contact | Peak Digital</title>
-        <meta
-          name="description"
-          content="Contact us anytime regarding how we can help you create the business of your dreams. No task is too difficult at Peak Digital."
-        />
-      </Head>
       <div className=" bg-white px-6 py-24 sm:py-32 lg:px-8">
         <div>
           <div />

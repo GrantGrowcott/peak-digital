@@ -3,18 +3,16 @@ import ServicesWidget from "./components/ServicesWidget";
 import QuestionsAnswers from "./components/QuestionsAnswers";
 import Image from "next/image";
 import { iconSizes } from "../../constants";
-import Head from "next/head";
+
+export const metadata = {
+  title: "Peak Digital | Hamilton Web Design & SEO",
+  description:
+    "Peak Digital builds high-converting websites for businesses in Hamilton. Web design, SEO, branding, and app development — all in one place.",
+};
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Peak Digital | Hamilton Web Design & SEO</title>
-        <meta
-          name="description"
-          content="Peak Digital builds high-converting websites for businesses in Hamilton. Web design, SEO, branding, and app development — all in one place."
-        />
-      </Head>
       <div className="min-h-screen flex flex-col items-center justify-center px-4 py-24 w-[90%] mx-auto">
         <h1 className="text-center text-3xl md:text-4xl lg:text-6xl font-bold">
           Turn Your Website Into a <span className="mt-2 block text-[var(--darkPurple)]">Sales-Generating Machine</span>
@@ -61,40 +59,76 @@ export default function Home() {
         <h4 className="text-[var(--grey)] my-12">Simplify operations with our efficient, quality focused services</h4>
         <ul className="text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto w-[90%]">
           <li className="flex flex-col items-start bg-[var(--lightPurple)] rounded-3xl p-6">
-            <Image src="/service-icon-one.png" height={iconSizes.serviceIcon} width={iconSizes.serviceIcon} alt="Connections icon" className="pb-6" />
+            <Image
+              src="/service-icon-one.png"
+              height={iconSizes.serviceIcon}
+              width={iconSizes.serviceIcon}
+              alt="Connections icon"
+              className="pb-6"
+            />
             <h3 className="text-[var(--white)] font-bold text-2xl">A.I and Search</h3>
             <h4 className="text-[var(--grey)]">Content, SEO, and speed—optimized for search and AI.</h4>
           </li>
           <li className="flex flex-col items-start bg-[var(--lightPurple)] rounded-3xl p-6">
-            <Image src="/service-icon-two.png" height={iconSizes.serviceIcon} width={iconSizes.serviceIcon} alt="Connections icon" className="pb-6" />
+            <Image
+              src="/service-icon-two.png"
+              height={iconSizes.serviceIcon}
+              width={iconSizes.serviceIcon}
+              alt="Connections icon"
+              className="pb-6"
+            />
             <h3 className="text-[var(--white)] font-bold text-2xl">Lead Generation</h3>
             <h4 className="text-[var(--grey)]">
               Capture more leads with a clear message, smart layout, and strategic calls to action.
             </h4>
           </li>
           <li className="flex flex-col items-start bg-[var(--lightPurple)] rounded-3xl p-6">
-            <Image src="/service-icon-three.png" height={iconSizes.serviceIcon} width={iconSizes.serviceIcon} alt="Connections icon" className="pb-6" />
+            <Image
+              src="/service-icon-three.png"
+              height={iconSizes.serviceIcon}
+              width={iconSizes.serviceIcon}
+              alt="Connections icon"
+              className="pb-6"
+            />
             <h3 className="text-[var(--white)] font-bold text-2xl">Website Design</h3>
             <h4 className="text-[var(--grey)]">
               Modern, custom website designs that reflect your brand identity through focused analysis.
             </h4>
           </li>
           <li className="flex flex-col items-start bg-[var(--lightPurple)] rounded-3xl p-6">
-            <Image src="/service-icon-four.png" height={iconSizes.serviceIcon} width={iconSizes.serviceIcon} alt="Connections icon" className="pb-6" />
+            <Image
+              src="/service-icon-four.png"
+              height={iconSizes.serviceIcon}
+              width={iconSizes.serviceIcon}
+              alt="Connections icon"
+              className="pb-6"
+            />
             <h3 className="text-[var(--white)] font-bold text-2xl">Graphic Design</h3>
             <h4 className="text-[var(--grey)]">
               We design custom animations, logos, and graphics that reflect your brand’s unique style.
             </h4>
           </li>
           <li className="flex flex-col items-start bg-[var(--lightPurple)] rounded-3xl p-6">
-            <Image src="/service-icon-five.png" height={iconSizes.serviceIcon} width={iconSizes.serviceIcon} alt="Connections icon" className="pb-6" />
+            <Image
+              src="/service-icon-five.png"
+              height={iconSizes.serviceIcon}
+              width={iconSizes.serviceIcon}
+              alt="Connections icon"
+              className="pb-6"
+            />
             <h3 className="text-[var(--white)] font-bold text-2xl">Hosting & Upkeep</h3>
             <h4 className="text-[var(--grey)]">
               Reliable hosting and ongoing website care—so you can focus on running your business.
             </h4>
           </li>
           <li className="flex flex-col items-start bg-[var(--lightPurple)] rounded-3xl p-6">
-            <Image src="/service-icon-six.png" height={iconSizes.serviceIcon} width={iconSizes.serviceIcon} alt="Connections icon" className="pb-6" />
+            <Image
+              src="/service-icon-six.png"
+              height={iconSizes.serviceIcon}
+              width={iconSizes.serviceIcon}
+              alt="Connections icon"
+              className="pb-6"
+            />
             <h3 className="text-[var(--white)] font-bold text-2xl">App Development</h3>
             <h4 className="text-[var(--grey)]">
               Improve efficiency with custom tools that save time and reduce friction.
@@ -111,7 +145,12 @@ export default function Home() {
               online world.
             </h3>
             <div className="flex justify-center mt-4">
-              <Image src="/values-smiling.png" height={iconSizes.womanHeight} width={iconSizes.womanWidth} alt="Woman Smiling while posing" />
+              <Image
+                src="/values-smiling.png"
+                height={iconSizes.womanHeight}
+                width={iconSizes.womanWidth}
+                alt="Woman Smiling while posing"
+              />
             </div>
           </div>
           <div className="flex-1 border-b-3 border-[var(--black)] pr-8">

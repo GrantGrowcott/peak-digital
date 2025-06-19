@@ -2,18 +2,17 @@ import Image from "next/image";
 import GetStarted from "../components/GetStarted";
 import ContactLandscape from "../components/ContactLandscape";
 import { iconSizes } from "../../../constants";
-import Head from "next/head";
+
+
+export const metadata = {
+  title: "About Us | Peak Digital",
+  description:
+    "Learn about Peak Digital, a Hamilton-based web design company focused on creating high-performance websites that drive results. Led by founder Grant Growcott.",
+};
 
 const About = () => {
   return (
     <> 
-      <Head>
-        <title>About Us | Peak Digital</title>
-        <meta
-          name="description"
-          content="Learn about Peak Digital, a Hamilton-based web design company focused on creating high-performance websites that drive results. Led by founder Grant Growcott."
-        />
-      </Head>
       <div className="mt-40 mx-auto w-[80%]">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-center text-4xl font-bold">About Us</h1>
