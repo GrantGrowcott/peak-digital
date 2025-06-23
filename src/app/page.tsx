@@ -13,7 +13,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen flex flex-col items-center justify-center px-4 py-24 w-[90%] mx-auto">
+      <div className="min-h-screen flex flex-col items-center justify-center px-4  w-[90%] mx-auto">
         <h1 className="text-center text-3xl md:text-4xl lg:text-6xl font-bold">
           Turn Your Website Into a <span className="mt-2 block text-[var(--darkPurple)]">Sales-Generating Machine</span>
         </h1>
