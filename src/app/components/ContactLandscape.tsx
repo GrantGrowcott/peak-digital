@@ -15,7 +15,7 @@ const ContactLandscape = () => {
           </div>
           <div className="flex items-center gap-3">
             <span>✉️</span>
-            <p>admin@peakdigital.ca</p>
+            <p>hello@peakdigital.ca</p>
           </div>
         </div>
       </div>
